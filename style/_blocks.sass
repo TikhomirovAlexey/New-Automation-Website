@@ -11,6 +11,7 @@
 
 .billboard
     min-height: 640px
+    margin-bottom: 64px
     display: flex
     background: linear-gradient(0.00deg, rgb(235, 243, 251) 8.836%,rgba(152, 195, 232, 0) 31.12%)
     &__inner
@@ -26,3 +27,35 @@
         margin-bottom: 32px
     &__text
         margin-bottom: 72px
+
+.help-client
+    margin-bottom: 64px
+    &__subtitle
+        margin-bottom: 64px
+    &__inner
+        display: grid
+        grid-template-columns: repeat(3, minmax(300px, 360px))
+        justify-content: space-between
+        column-gap: 18px
+
+.card
+    @include flex(space-between, center)
+    flex-direction: column
+    padding: 44px 32px
+    border-radius: $border-radius
+    box-shadow: 5px 20px 50px 0px rgba(16, 112, 177, 0.2)
+    background-color: $color-lite
+    min-height: 480px
+    &__heading
+        margin-bottom: 15px
+    &__text
+        margin-bottom: 24px
+    &__button
+        font-size: 14px
+        font-weight: 400
+        letter-spacing: 0.05em
+        color: $color-medium
+        @include flex(flex-start, center)
+        column-gap: 24px
+        @include hover
+            color: $color-dark

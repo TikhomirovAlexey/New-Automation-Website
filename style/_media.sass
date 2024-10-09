@@ -1,7 +1,22 @@
+@media (min-width: 1025px) and (max-width: 1140px)
+    .card
+        padding: 44px 24px
+
 @media (max-width: 1024px)
     .billboard
         &__inner
             background-position-y: 90%
+
+    .help-client
+        margin-bottom: 128px
+        &__inner
+            grid-template-columns: repeat(1, minmax(300px, 360px))
+            justify-content: center
+            row-gap: 32px
+
+    .card
+        padding: 40px 30px
+        min-height: 450px
 
 @media (max-width: 768px)
     .container
@@ -17,6 +32,7 @@
         min-height: 284px
         text-align: center
         padding-bottom: 42px
+        margin-bottom: 48pxpx
         &__inner
             background: none
         &__body
@@ -29,4 +45,12 @@
         &__title
             margin-bottom: 12px
         &__text
+            margin-bottom: 32px
+
+    .subtitle
+        @include fluid-text(24, 36)
+
+    .help-client
+        margin-bottom: 64px
+        &__subtitle
             margin-bottom: 32px

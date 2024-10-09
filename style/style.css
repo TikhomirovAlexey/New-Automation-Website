@@ -200,16 +200,16 @@ body {
 
 .subtitle {
   color: #000;
-  font-size: clamp(24px, 2.635431918vw, 36px);
+  font-size: 36px;
   font-weight: 300;
-  line-height: 46px;
+  line-height: 1.27;
   letter-spacing: 0.05em;
   text-align: center;
 }
 
 .heading {
   font-size: 20px;
-  line-height: 30px;
+  line-height: 1.5;
   letter-spacing: 0.05em;
 }
 
@@ -266,6 +266,7 @@ body {
 
 .billboard {
   min-height: 640px;
+  margin-bottom: 64px;
   display: flex;
   background: linear-gradient(0deg, rgb(235, 243, 251) 8.836%, rgba(152, 195, 232, 0) 31.12%);
 }
@@ -291,9 +292,79 @@ body {
   margin-bottom: 72px;
 }
 
+.help-client {
+  margin-bottom: 64px;
+}
+.help-client__subtitle {
+  margin-bottom: 64px;
+}
+.help-client__inner {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 360px));
+  justify-content: space-between;
+  -moz-column-gap: 18px;
+       column-gap: 18px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 44px 32px;
+  border-radius: 10px;
+  box-shadow: 5px 20px 50px 0px rgba(16, 112, 177, 0.2);
+  background-color: #fff;
+  min-height: 480px;
+}
+.card__heading {
+  margin-bottom: 15px;
+}
+.card__text {
+  margin-bottom: 24px;
+}
+.card__button {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #5A98D0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+}
+@media (hover: hover) {
+  .card__button:hover {
+    color: #316099;
+  }
+}
+@media (hover: none) {
+  .card__button:active {
+    color: #316099;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1140px) {
+  .card {
+    padding: 44px 24px;
+  }
+}
 @media (max-width: 1024px) {
   .billboard__inner {
     background-position-y: 90%;
+  }
+  .help-client {
+    margin-bottom: 128px;
+  }
+  .help-client__inner {
+    grid-template-columns: repeat(1, minmax(300px, 360px));
+    justify-content: center;
+    row-gap: 32px;
+  }
+  .card {
+    padding: 40px 30px;
+    min-height: 450px;
   }
 }
 @media (max-width: 768px) {
@@ -310,6 +381,7 @@ body {
     min-height: 284px;
     text-align: center;
     padding-bottom: 42px;
+    margin-bottom: 48pxpx;
   }
   .billboard__inner {
     background: none;
@@ -327,6 +399,15 @@ body {
     margin-bottom: 12px;
   }
   .billboard__text {
+    margin-bottom: 32px;
+  }
+  .subtitle {
+    font-size: clamp(24px, 2.635431918vw, 36px);
+  }
+  .help-client {
+    margin-bottom: 64px;
+  }
+  .help-client__subtitle {
     margin-bottom: 32px;
   }
 }/*# sourceMappingURL=style.css.map */
