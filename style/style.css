@@ -192,10 +192,10 @@ body {
 }
 
 .title {
-  font-size: clamp(32px, 4.6852122987vw, 64px);
+  font-size: 64px;
   font-weight: 300;
-  line-height: 1, 15;
-  letter-spacing: 4%;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
 }
 
 .subtitle {
@@ -203,21 +203,42 @@ body {
   font-size: clamp(24px, 2.635431918vw, 36px);
   font-weight: 300;
   line-height: 46px;
-  letter-spacing: 5%;
+  letter-spacing: 0.05em;
   text-align: center;
 }
 
 .heading {
   font-size: 20px;
   line-height: 30px;
-  letter-spacing: 5%;
+  letter-spacing: 0.05em;
 }
 
 .text {
-  font-size: 16;
+  font-size: 16px;
   line-height: 1.6;
-  letter-spacing: 5%;
+  letter-spacing: 0.05em;
   opacity: 0.6;
+}
+
+.button {
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 0.04;
+  padding: 15px 50px;
+  border-radius: 10px;
+  background-color: #5A98D0;
+  box-shadow: 5px 10px 20px 0px rgba(53, 110, 173, 0.2);
+  transition: background 0.3s;
+}
+@media (hover: hover) {
+  .button:hover {
+    background-color: #316099;
+  }
+}
+@media (hover: none) {
+  .button:active {
+    background-color: #316099;
+  }
 }
 
 .header {
@@ -228,4 +249,84 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.nav__link {
+  transition: opacity 0.3s;
+}
+@media (hover: hover) {
+  .nav__link:hover {
+    opacity: 0.7;
+  }
+}
+@media (hover: none) {
+  .nav__link:active {
+    opacity: 0.7;
+  }
+}
+
+.billboard {
+  min-height: 640px;
+  display: flex;
+  background: linear-gradient(0deg, rgb(235, 243, 251) 8.836%, rgba(152, 195, 232, 0) 31.12%);
+}
+.billboard__inner {
+  flex-grow: 1;
+  padding-top: 107px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background: url(../img/bg-banner.svg) 95% 60%/45% no-repeat;
+}
+.billboard__body {
+  width: 506px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.billboard__title {
+  margin-bottom: 32px;
+}
+.billboard__text {
+  margin-bottom: 72px;
+}
+
+@media (max-width: 1024px) {
+  .billboard__inner {
+    background-position-y: 90%;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    padding-inline: 16px;
+  }
+  .header {
+    margin-block: 16px 28px;
+  }
+  .title {
+    font-size: clamp(32px, 4.6852122987vw, 64px);
+  }
+  .billboard {
+    min-height: 284px;
+    text-align: center;
+    padding-bottom: 42px;
+  }
+  .billboard__inner {
+    background: none;
+  }
+  .billboard__body {
+    width: 100%;
+    align-items: center;
+  }
+  .billboard__button {
+    font-size: 12px;
+    letter-spacing: 0;
+    padding: 8px 10px;
+  }
+  .billboard__title {
+    margin-bottom: 12px;
+  }
+  .billboard__text {
+    margin-bottom: 32px;
+  }
 }/*# sourceMappingURL=style.css.map */

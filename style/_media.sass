@@ -1,0 +1,32 @@
+@media (max-width: 1024px)
+    .billboard
+        &__inner
+            background-position-y: 90%
+
+@media (max-width: 768px)
+    .container
+        padding-inline: $padding-inline-mobile
+
+    .header
+        margin-block: 16px 28px
+
+    .title
+        @include fluid-text(32, 64)
+
+    .billboard
+        min-height: 284px
+        text-align: center
+        padding-bottom: 42px
+        &__inner
+            background: none
+        &__body
+            width: 100%
+            align-items: center
+        &__button
+            font-size: 12px
+            letter-spacing: 0
+            padding: 8px 10px
+        &__title
+            margin-bottom: 12px
+        &__text
+            margin-bottom: 32px

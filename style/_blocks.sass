@@ -4,3 +4,25 @@
 .nav
     &__list
         @include flex(space-between, center)
+    &__link
+        transition: opacity 0.3s
+        @include hover
+            opacity: 0.7
+
+.billboard
+    min-height: 640px
+    display: flex
+    background: linear-gradient(0.00deg, rgb(235, 243, 251) 8.836%,rgba(152, 195, 232, 0) 31.12%)
+    &__inner
+        flex-grow: 1
+        padding-top: 107px
+        @include flex
+        background: url(../img/bg-banner.svg) 95% 60%/45% no-repeat
+    &__body
+        width: 506px
+        @include flex(center)
+        flex-direction: column
+    &__title
+        margin-bottom: 32px
+    &__text
+        margin-bottom: 72px
