@@ -1,0 +1,35 @@
+body
+    font-family: $font-family-base
+    font-weight: 400
+    color: $color-extra-medium
+    background-color: $color-lite
+
+.container
+    max-width: calc( $site-width + $padding-inline-tablet * 2 )
+    padding-inline: $padding-inline-tablet
+    margin-inline: auto
+
+.title
+    @include fluid-text(32, 64)
+    font-weight: 300
+    line-height: 1,15
+    letter-spacing: 4%
+
+.subtitle
+    color: $color-extra-dark
+    @include fluid-text(24, 36)
+    font-weight: 300
+    line-height: 46px
+    letter-spacing: 5%
+    text-align: center
+
+.heading
+    font-size: 20px
+    line-height: 30px
+    letter-spacing: 5%
+
+.text 
+    font-size: 16
+    line-height: 1.6
+    letter-spacing: 5%
+    opacity: 0.6
