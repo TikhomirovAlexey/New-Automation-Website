@@ -25,6 +25,10 @@ body
     line-height: 1.27
     letter-spacing: 0.05em
     text-align: center
+    &_lite
+        color: $color-lite
+        font-weight: 400
+        text-align: left
 
 .heading
     font-size: 20px
@@ -40,11 +44,13 @@ body
         color: $color-extra-dark
         text-align: center
         opacity: 1
+    &_extra-opacity
+        opacity: 0.4
 
 .button
     color: $color-lite
     font-size: 16px
-    letter-spacing: 0.04
+    letter-spacing: 0.04em
     padding: 15px 50px
     border-radius: $border-radius
     background-color: $color-medium
@@ -52,3 +58,8 @@ body
     transition: background 0.3s
     @include hover
         background-color: $color-dark
+    &_square
+        padding: 15px 80px
+        box-shadow: none
+        border-radius: 0
+        border: 1px solid $color-medium

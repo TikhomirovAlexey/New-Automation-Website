@@ -22,6 +22,26 @@
         &__text
             max-width: 520px
 
+    .footer
+        &__info
+            padding-block: 47px 64px
+            justify-content: center
+        &__body
+            max-width: 336px
+        &__inner
+            max-width: 515px
+            margin-inline: auto
+
+    .button
+        &_square
+            padding: 8px 40px
+
+    .address
+        &__list
+            grid-template-columns: repeat(1, 1fr)
+            row-gap: 22px
+            justify-content: center
+
 @media (max-width: 768px)
     .container
         padding-inline: $padding-inline-mobile
@@ -77,3 +97,30 @@
             left: 16px
             font-size: 16px
             letter-spacing: 0
+
+    .footer
+        &__info
+            padding-block: 18px 40px
+            flex-direction: column
+            align-items: center
+            text-align: center
+            row-gap: 40px
+        &__body
+            width: 100%
+        &__contacts
+            padding-bottom: 32px
+            &::before
+                margin-bottom: 32px
+
+    .subtitle
+        &_lite
+            text-align: center
+
+    .address
+        &__list
+            row-gap: 18px
+            margin-bottom: 32px
+
+    .text
+        &_extra-opacity
+            text-align: center
