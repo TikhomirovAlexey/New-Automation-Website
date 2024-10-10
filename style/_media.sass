@@ -18,6 +18,10 @@
         padding: 40px 30px
         min-height: 450px
 
+    .our-project
+        &__text
+            max-width: 520px
+
 @media (max-width: 768px)
     .container
         padding-inline: $padding-inline-mobile
@@ -54,3 +58,22 @@
         margin-bottom: 64px
         &__subtitle
             margin-bottom: 32px
+
+    .our-project
+        margin-bottom: 64px
+        &__subtitle
+            margin-bottom: 32px
+        &__text
+            margin-bottom: 82px
+            margin-inline: auto
+        &__inner
+            display: grid
+            grid-template-columns: repeat(1, 1fr)
+            gap: 16px
+        &__img
+            width: 100%
+        &__caption
+            top: 16px
+            left: 16px
+            font-size: 16px
+            letter-spacing: 0

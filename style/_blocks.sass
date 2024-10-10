@@ -59,3 +59,34 @@
         column-gap: 24px
         @include hover
             color: $color-dark
+
+.our-project
+    margin-bottom: 112px
+    &__subtitle
+        margin-bottom: 32px
+    &__text
+        max-width: 750px
+        margin-bottom: 64px
+        margin-inline: auto
+    &__inner
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        gap: 32px
+    &__wrapper
+        position: relative
+        &_big
+            grid-column: 1 / -1
+    &__img
+        height: auto
+    &__caption
+        position: absolute
+        top: 32px
+        left: 32px
+        color: $color-lite
+        font-size: 28px
+        letter-spacing: 0.05em
+        &_big
+            top: 64px
+            left: auto
+            right: 64px
+            font-size: 32px
