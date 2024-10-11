@@ -100,9 +100,7 @@
         column-gap: 52px
     &__body
         max-width: 495px
-        display: flex
-        flex-direction: column
-        row-gap: 32px
+        @include flex-column(32px)
     &__contacts
         padding-bottom: 64px
         &::before
@@ -131,3 +129,86 @@
         text-decoration: underline
         @include hover
             opacity: 0.7
+
+.contact-us
+    margin-bottom: 112px
+    &__header
+        padding-block: 50px
+        margin-bottom: 58px
+        background: url('../img/contact-us-bg.jpeg') center/cover no-repeat
+        color: $color-lite
+        text-align: center
+    &__title
+        font-size: 44px
+        font-weight: 500
+        letter-spacing: 0.04em
+        margin-bottom: 24px
+    &__text
+        font-size: 20px
+        line-height: 1.5
+        letter-spacing: 0.04em
+        max-width: 780px
+        margin-inline: auto
+    &__content
+        margin-bottom: 96px
+    &__inner-content
+        @include flex(center, center)
+        column-gap: clamp(52px, 100%, 102px)
+    &__footer
+        max-width: 940px
+        margin-inline: auto
+
+.contacts
+    @include flex-column(40px)
+    max-width: 302px
+    &__img
+        margin-bottom: 16px
+    &__wrapper
+        @include flex-column(24px)
+    &__list
+        @include flex-column(16px)
+    &__link
+        @include flex(flex-start, center)
+        column-gap: 16px
+        text-decoration: underline
+        & > svg
+            transition: transform 0.3s
+        @include hover
+            & > svg
+                transform: scale(1.2)
+            
+
+.form-message
+    padding: 56px
+    width: min(100%, 540px)
+    border-radius: $border-radius
+    box-shadow: 5px 10px 50px 0px rgba(16, 112, 177, 0.2)
+    background-color: $color-lite
+    &__wrapper
+        @include flex-column(8px)
+        &:not(:last-of-type)
+            margin-bottom: 32px
+    &__label
+        font-size: 16px
+        letter-spacing: 0.04em
+        opacity: 0.8
+    &__input
+        width: 100%
+        font-size: 16px
+        font-weight: 300
+        letter-spacing: 0.04em
+        opacity: 0.2
+        padding: 21px 36px
+        border: 1px solid $color-dark
+        border-radius: $border-radius
+        opacity: 0.4
+        &_textarea
+            resize: none
+            height: 144px
+    &__heading
+        margin-bottom: 48px
+    &__button
+        margin-top: 72px
+        width: 100%
+        padding-block: 23px
+        text-transform: uppercase

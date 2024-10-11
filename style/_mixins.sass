@@ -25,3 +25,8 @@
 
 @mixin fluid-text($min, $max)
     font-size: clamp(#{$min}px, #{$max / 1366 * 100}vw, #{$max}px)
+
+@mixin flex-column($row-gap: 12px)
+    display: flex
+    flex-direction: column
+    row-gap: $row-gap

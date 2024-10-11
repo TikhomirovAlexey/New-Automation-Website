@@ -34,6 +34,10 @@ body
     font-size: 20px
     line-height: 1.5
     letter-spacing: 0.05em
+    &_uppercase
+        text-transform: uppercase
+        letter-spacing: 0.04em
+        font-weight: 500
 
 .text
     font-size: 16px
@@ -46,6 +50,9 @@ body
         opacity: 1
     &_extra-opacity
         opacity: 0.4
+    &_lite-weight
+        font-weight: 300
+        letter-spacing: 0.04em
 
 .button
     color: $color-lite
@@ -54,6 +61,7 @@ body
     padding: 15px 50px
     border-radius: $border-radius
     background-color: $color-medium
+    border: 1px solid $color-medium
     box-shadow: 5px 10px 20px 0px rgba(53, 110, 173, 0.2)
     transition: background 0.3s
     @include hover
@@ -62,4 +70,4 @@ body
         padding: 15px 80px
         box-shadow: none
         border-radius: 0
-        border: 1px solid $color-medium
+

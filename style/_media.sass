@@ -42,6 +42,16 @@
             row-gap: 22px
             justify-content: center
 
+    .contact-us
+        margin-bottom: 64px
+        &__text
+            max-width: 520px
+        &__content
+            margin-bottom: 64px
+        &__inner-content
+            flex-direction: column
+            row-gap: 64px
+
 @media (max-width: 768px)
     .container
         padding-inline: $padding-inline-mobile
@@ -102,9 +112,9 @@
         &__info
             padding-block: 18px 40px
             flex-direction: column
+            row-gap: 40px
             align-items: center
             text-align: center
-            row-gap: 40px
         &__body
             width: 100%
         &__contacts
@@ -124,3 +134,30 @@
     .text
         &_extra-opacity
             text-align: center
+
+    .contact-us
+        margin-bottom: 32px
+        &__header
+            padding-block: 48px
+        &__title
+            @include fluid-text(24, 44)
+        &__text
+            @include fluid-text(16, 20)
+            letter-spacing: 0
+        &__content
+            margin-bottom: 32px
+        &__inner-content
+            row-gap: 32px
+
+    .contacts
+        row-gap: 32px
+
+    .form-message
+        padding: 36px
+        &__heading
+            margin-bottom: 32px
+        &__wrapper
+            &:not(:last-of-type)
+                margin-bottom: 20px
+        &__button
+            margin-top: 46px
