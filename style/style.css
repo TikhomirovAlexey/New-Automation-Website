@@ -164,6 +164,23 @@ a {
           user-select: none;
 }
 
+/**
+ *  убираем стандартную фокус-линию
+ *  */    
+:where(input, textarea, a, button) {
+  outline: none;
+}
+
+:where(input, textarea, a, button):focus-visible {
+  outline: 3px solid #1F3F68;
+  border-radius: 10px;
+}
+
+.nav__link:focus-visible > img {
+  outline: 3px solid #1F3F68;
+  border-radius: 10px;
+}
+
 body {
   font-family: Roboto, sans-serif;
   font-weight: 400;
