@@ -157,12 +157,15 @@
     &__footer
         max-width: 940px
         margin-inline: auto
+        & > iframe
+            width: 100%
+            border: none
 
 .contacts
-    @include flex-column(40px)
+    @include flex-column(52px)
     max-width: 302px
-    &__img
-        margin-bottom: 16px
+    &__address
+        @include flex-column(40px)
     &__wrapper
         @include flex-column(24px)
     &__list
@@ -177,7 +180,6 @@
             & > svg
                 transform: scale(1.2)
             
-
 .form-message
     padding: 56px
     width: min(100%, 540px)

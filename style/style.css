@@ -529,15 +529,21 @@ body {
   max-width: 940px;
   margin-inline: auto;
 }
+.contact-us__footer > iframe {
+  width: 100%;
+  border: none;
+}
 
 .contacts {
   display: flex;
   flex-direction: column;
-  row-gap: 40px;
+  row-gap: 52px;
   max-width: 302px;
 }
-.contacts__img {
-  margin-bottom: 16px;
+.contacts__address {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
 }
 .contacts__wrapper {
   display: flex;
@@ -672,6 +678,9 @@ body {
     flex-direction: column;
     row-gap: 64px;
   }
+  .contacts {
+    row-gap: 64px;
+  }
 }
 @media (max-width: 768px) {
   .container {
@@ -785,7 +794,7 @@ body {
   .contact-us__inner-content {
     row-gap: 32px;
   }
-  .contacts {
+  .contacts__address {
     row-gap: 32px;
   }
   .form-message {
