@@ -1,1 +1,24 @@
-# New-Automation-Website. Practice HTML/CSS.
+# New-Automation-Website. Практика HTML/CSS.
+
+![img layout](img/layout.jpg)
+
+## Макет сайта
+https://www.figma.com/design/AOKabCJEdEqr9ZZEaJ0IMS/html%2Fcss-(Copy)?node-id=1-966&node-type=frame&t=CEsZL4MMLmxoTzIw-0
+
+
+### Целью верстки данного сайта было закрепление следующих заний:
+- Структура HTML документа
+- Основные теги и их атрибуты
+- Виды ссылок
+- Виды селекторов
+- Единицы измерения
+- Работа с макетоми
+- Свойство display, строчные и блочные элементы
+- Основы Flexbox и Grid layout
+- Свойства position
+- Основы создания адаптивного сайта
+- Медиазапросы
+- Препроцессор SASS
+- БЭМ методология
+
+Код валидный, типографирован. Все непонятные моменты макета решались по усмотрению разработчика. 
